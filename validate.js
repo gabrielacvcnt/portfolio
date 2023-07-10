@@ -1,4 +1,4 @@
-function validarDatos(){
+function validarDados(){
     event.preventDefault()
     var error = document.querySelector('#error')
     error.style.color = 'black'
@@ -8,24 +8,24 @@ function validarDatos(){
     var mensajesError = []
     
     if (document.form.name.value=="" ) {
-        mensajesError.push("Campo nome é obrigatorio")  
+        mensajesError.push("Campo Nome é obrigatório")  
         document.form.name.focus()
     
     }else if (document.form.email.value=="") {
-        mensajesError.push("Campo e-mail é obrigatorio")
+        mensajesError.push("Campo E-mail é obrigatório")
         document.form.email.focus() 
 
     }else if (document.form.assunto.value=="" ) {
-        mensajesError.push("Campo Assunto é obrigatorio")
+        mensajesError.push("Campo Assunto é obrigatório")
         document.form.assunto.focus() 
 
     }else if (document.form.textarea.value=="" || document.form.textarea.value.length < 50 ){
-        mensajesError.push("Campo Mensagem é obrigatorio e deve conter pelo menos 50 carateres") 
+        mensajesError.push("Campo Mensagem é obrigatório e deve conter pelo menos 50 carateres") 
         document.form.textarea.focus()
       
     } else if (document.form.email.value.indexOf('@')==-1 ||
     document.form.email.value.indexOf('.')==-1 ) {
-        mensajesError.push("e-mail inválido")
+        mensajesError.push("E-mail inválido")
     }
 
 
@@ -33,4 +33,4 @@ function validarDatos(){
 
     
 }
-    document.querySelector('form').addEventListener('submit',validardatos)
+    document.querySelector('form').addEventListener('submit',validardados)
