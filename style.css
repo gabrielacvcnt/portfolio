@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 10px 20px;
   line-height: 1;
+  letter-spacing: 1px;
   width: 100vw;
 }
 
@@ -77,7 +78,6 @@ section.title div.title-div div.title-container h2 {
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
-  text-align: center;
 }
 
 section.title div.title-div div.title-container h3 {
@@ -96,8 +96,8 @@ section.title div.title-div div.title-container ul {
 }
 
 section.title img.profile {
-  width: 30%;
-  margin-left: 35%;
+  margin-left: 30%;
+  width: 40%;
 }
 
 .section-title {
@@ -105,24 +105,24 @@ section.title img.profile {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 20px 0 20px 0;
+  margin: 6%;
 }
 
 /*Sessão About*/
 
 section.about {
-  padding: 1rem;
+  padding: 1rem 1rem 0.4rem 1rem;
   background-color: #e7d4cb;
 }
 
 section.about h3 {
-  margin: 10px 0 0 0;
+  margin-top: 3%;
 }
 
 section.about div.about-container p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 section.about div.about-container img {
@@ -130,7 +130,7 @@ section.about div.about-container img {
   width: 15%;
 }
 
-/*Sessão Skill*/
+/*Sessão Skills*/
 
 section.skills div.skills-line {
   display: flex;
@@ -150,6 +150,10 @@ section.skills div.skills-line div.skills-box {
   width: 40%;
   height: auto;
   margin: 0 0 10px 0;
+}
+
+section.skills div.skills-line div.skills-box:nth-child(n+13) {
+    margin: 0;
 }
 
 section.skills div.skills-line div.skills-box ul {
@@ -178,6 +182,10 @@ section.hobbies-section div.hobbies-line div.hobbies-box {
   margin: 0 0 10px 0;
 }
 
+section.hobbies-section div.hobbies-line div.hobbies-box {
+    margin: 0;
+}
+
 section.hobbies-section div.hobbies-line div.hobbies-box ul {
   margin: 0;
   padding: 0;
@@ -202,129 +210,116 @@ section.academic div.courses ul {
 
 section.academic div.courses ul li {
   padding: 0;
-  margin: 30px;
+  margin: 0 30px 0 30px;
 }
 
 section.academic div.courses ul li.course-img {
   background-color: white;
+  margin-top: 6%;
 }
 
 section.academic div.courses ul li.course-title h4 {
   font-weight: 700;
   font-size: 16px;
-  margin: -10px 0 0 0;
+  margin-top: 14px;
   text-align: start;
 }
 
 section.academic div.courses ul li.course-subtitle {
   font-weight: 500;
   font-size: 14px;
-  margin: -25px 0 0 30px;
+  margin-top: -14px;
   text-align: start;
 }
 
 /* Experiência Profissional*/
 
-section.experience {
-  margin-top: 6%;
-}
-
-section.section-title {
-  margin-top: 6%;
-}
-
-section.experience div.experiencia-box {
-  margin: 0 30px 30px 30px;
-}
-
-section.experience div.experiencia-box img {
-  margin-bottom: 16px;
+#xp.section-title {
+  margin-bottom: 0;
 }
 
 section.experience div.experiencia-box h2 {
   font-weight: 700;
   font-size: 16px;
+  text-align: center;
 }
 
 section.experience div.experiencia-box h3 {
   font-weight: 500;
   font-size: 14px;
+  line-height: 120%;
+  text-align: start;
+  letter-spacing: 1.5px;
 }
 
 section.experience div.experiencia-box div.experience-description {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-section.experience div.experiencia-box span.experience-repo button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 16px;
+section.experience div.experiencia-box span.experience-presentation button {
+  padding: 12px;
   border: 1px solid #af5122;
   color: #af5122;
   box-sizing: border-box;
+  min-width: 150%;
+}
+
+section.experience div.experiencia-box span.experience-presentation-pmpb button {
+  padding: 12px;
+  border: 1px solid #af5122;
+  color: #af5122;
+  box-sizing: border-box;
+  min-width: 100%;
 }
 
 section.experience div.experiencia-box span.experience-demo button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 16px;
-  margin-left: 16px;
+  padding: 12px;
   border: 1px solid #af5122;
   background: #af5122;
   color: white;
+  min-width: 50%;
 }
 
 section.experience img {
   width: 100%;
+  margin-top: 6%;
+}
+
+section.experience hr {
+  margin: 8% 0 4% 0;
+  opacity: 0.7;
 }
 
 /*footeer*/
 
-section.footer {
-  height: 4vh;
+section.footer div.contact {
+  align-items: center;
   display: flex;
-  background-color: rgb(255, 255, 255);
-  justify-content: center;
-  margin: 20px 0 10px 0;
+  justify-content: space-between;
+  padding: 0 50px 16px 50px;
 }
 
-section.footer-clean {
-  padding: 50px 0;
-  background-color: #fff;
-  color: #4b4c4d;
+section.footer img {
+  color:inherit;
+  text-decoration:none;
+  opacity: 0.7;
 }
 
-section.footer-clean h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-section.footer-clean ul {
-  padding: 0;
-  list-style: none;
-  line-height: 1.6;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-section.footer-clean ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-section.footer-clean ul a:hover {
+section.footer img:hover {
   opacity: 1;
 }
 
-section.footer-clean .item.social {
-  text-align: right;
+section.footer div.copyright {
+  color: #4b4c4d;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0; 
+  opacity: 0.6;
 }
 
 @media (min-width: 700px) {
