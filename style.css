@@ -37,7 +37,6 @@ select:focus {
 .tudo {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 /*Sessão Menu*/
@@ -153,7 +152,7 @@ section.skills div.skills-line div.skills-box {
 }
 
 section.skills div.skills-line div.skills-box:nth-child(n+13) {
-    margin: 0;
+  margin: 0;
 }
 
 section.skills div.skills-line div.skills-box ul {
@@ -163,14 +162,14 @@ section.skills div.skills-line div.skills-box ul {
 
 /*Sessão Hobbies*/
 
-section.hobbies-section div.hobbies-line {
+section.hobbies div.hobbies-line {
   display: flex;
   flex-wrap: wrap;
   width: 90vw;
   justify-content: space-between;
 }
 
-section.hobbies-section div.hobbies-line div.hobbies-box {
+section.hobbies div.hobbies-line div.hobbies-box {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -182,11 +181,7 @@ section.hobbies-section div.hobbies-line div.hobbies-box {
   margin: 0 0 10px 0;
 }
 
-section.hobbies-section div.hobbies-line div.hobbies-box {
-    margin: 0;
-}
-
-section.hobbies-section div.hobbies-line div.hobbies-box ul {
+section.hobbies div.hobbies-line div.hobbies-box ul {
   margin: 0;
   padding: 0;
 }
@@ -210,7 +205,7 @@ section.academic div.courses ul {
 
 section.academic div.courses ul li {
   padding: 0;
-  margin: 0 30px 0 30px;
+  margin: 0 15px 0 15px;
 }
 
 section.academic div.courses ul li.course-img {
@@ -235,7 +230,7 @@ section.academic div.courses ul li.course-subtitle {
 /* Experiência Profissional*/
 
 #xp.section-title {
-  margin-bottom: 0;
+  margin: 8% 0 0 0;
 }
 
 section.experience div.experiencia-box h2 {
@@ -287,7 +282,7 @@ section.experience div.experiencia-box span.experience-demo button {
 
 section.experience img {
   width: 100%;
-  margin-top: 6%;
+  margin-top: 8%;
 }
 
 section.experience hr {
@@ -305,8 +300,8 @@ section.footer div.contact {
 }
 
 section.footer img {
-  color:inherit;
-  text-decoration:none;
+  color: inherit;
+  text-decoration: none;
   opacity: 0.7;
 }
 
@@ -318,7 +313,7 @@ section.footer div.copyright {
   color: #4b4c4d;
   font-size: 16px;
   text-align: center;
-  margin-bottom: 0; 
+  margin-bottom: 0;
   opacity: 0.6;
 }
 
@@ -327,10 +322,14 @@ section.footer div.copyright {
     margin: 32px 32px;
   }
 
-  /*title*/
-  section.title {
-    margin-bottom: 32px;
+  /*menu*/
+  
+  section.menu {
+    width: 150%;
+    height: auto;
   }
+
+  /*title*/
 
   div.title-div {
     justify-content: space-around;
@@ -339,31 +338,119 @@ section.footer div.copyright {
     flex-direction: row-reverse;
   }
 
+  section.title img.profile {
+    width: 160px;
+    margin: 0px 0px 42px 32px;
+  }
+
   div.title-container {
     width: 524px;
   }
 
-  section.title img.profile {
-    width: 157px;
-    margin-left: 32px;
+  section.title div.title-div div.title-container ul {
+    justify-content: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
-  /*experiências acadêmicas*/
+  /*about*/
+  
+  section.about h3 {
+   margin-top: 10px;
+  }
+
+  section.title div.title-div div.title-container li {
+    padding-right: 25px;
+  }
+    
+  section.about div.about-container img {
+    margin: 0 0 0 45%;
+    width: 10%;
+  }
+
+  /*skills*/
+
+  #skills.section-title {
+    margin: 4%;
+  }
+
+  section.skills div.skills-line div.skills-box {
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  section.skills div.skills-line {
+    width: 85vw;
+  }
+
+  section.skills ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  section.skills li {
+    margin-right: 20px;
+  }
+
+  /*hobbies*/
+
+  section.hobbies .section-title {
+    margin: 4%;
+  }
+
+  section.hobbies div.hobbies-line div.hobbies-box {
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  section.hobbies div.hobbies-line {
+    width: 85vw;
+  }
+
+  section.hobbies ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  section.hobbies li {
+    margin-right: 20px;
+  }
+  
+  /*acadêmico*/
+
+  section.academic {
+    margin-top: 4%;
+  }
+
+  section.academic .section-title{
+    margin: 4%;
+  }
 
   section.academic div.courses {
+    align-items:stretch;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
   }
 
   section.academic div.courses-box {
-    width: 18rem;
+    width: 32rem;
   }
 
-  section.academic div.courses ul li.course-img img {
-    width: 50%;
+  section.academic div.courses ul li.course-img {
+    align-items:normal
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
   }
 
-  /*expeirência profissional*/
+  /*profissional*/
 
   section.experience div.experiencia-box {
     display: flex;
@@ -451,11 +538,11 @@ section.footer div.copyright {
 
   /*Hobbies*/
 
-  section.hobbies-section div.hobbies-line {
+  section.hobbies div.hobbies-line {
     width: 100%;
   }
 
-  section.hobbies-section div.hobbies-line div.hobbies-box {
+  section.hobbies div.hobbies-line div.hobbies-box {
     margin: 22px 15px 22px 0px;
     width: 108px;
     height: 108px;
@@ -566,11 +653,11 @@ section.footer div.copyright {
     height: 118px;
   }
 
-  section.hobbies-section div.hobbies-line {
+  section.hobbies div.hobbies-line {
     justify-content: center;
   }
 
-  section.hobbies-section div.hobbies-line div.hobbies-box {
+  section.hobbies div.hobbies-line div.hobbies-box {
     margin: 22px 15px 22px 0px;
     width: 186px;
     height: 118px;
@@ -719,11 +806,11 @@ section.footer div.copyright {
 
   /*Hobbies*/
 
-  section.hobbies-section div.hobbies-line {
+  section.hobbies div.hobbies-line {
     width: 100%;
   }
 
-  section.hobbies-section div.hobbies-line div.hobbies-box {
+  section.hobbies div.hobbies-line div.hobbies-box {
     margin: 22px 15px 22px 0px;
     width: 108px;
     height: 108px;
@@ -844,11 +931,11 @@ section.footer div.copyright {
     width: 12%;
   }
 
-  section.hobbies-section div.hobbies-line {
+  section.hobbies div.hobbies-line {
     justify-content: center;
   }
 
-  section.hobbies-section div.hobbies-line div.hobbies-box {
+  section.hobbies div.hobbies-line div.hobbies-box {
     width: 12%;
   }
 
