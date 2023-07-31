@@ -376,21 +376,8 @@ section.footer div.copyright {
 
   section.skills div.skills-line div.skills-box {
     align-items: start;
-    justify-content: space-between;
-  }
-
-  section.skills div.skills-line {
-    width: 85vw;
-  }
-
-  section.skills ul {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  section.skills li {
-    margin-right: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   /*hobbies*/
@@ -429,22 +416,22 @@ section.footer div.copyright {
   }
 
   section.academic div.courses {
-    align-items:stretch;
+    align-items: start;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:flex-start;
     flex-wrap: wrap;
+    margin: 0 15px 0 15px;
   }
 
   section.academic div.courses-box {
-    width: 32rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 18rem;
   }
 
   section.academic div.courses ul li.course-img {
-    align-items:normal
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
