@@ -264,14 +264,6 @@ section.experience div.experiencia-box span.experience-presentation button {
   min-width: 150%;
 }
 
-section.experience div.experiencia-box span.experience-presentation-pmpb button {
-  padding: 12px;
-  border: 1px solid #af5122;
-  color: #af5122;
-  box-sizing: border-box;
-  min-width: 100%;
-}
-
 section.experience div.experiencia-box span.experience-demo button {
   padding: 12px;
   border: 1px solid #af5122;
@@ -285,18 +277,13 @@ section.experience img {
   margin-top: 8%;
 }
 
-section.experience hr {
-  margin: 8% 0 4% 0;
-  opacity: 0.7;
-}
-
 /*footeer*/
 
 section.footer div.contact {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px 16px 50px;
+  padding: 0 50px 8px 50px;
 }
 
 section.footer img {
@@ -316,6 +303,23 @@ section.footer div.copyright {
   margin-bottom: 0;
   opacity: 0.6;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 700px) {
   .tudo {
@@ -349,8 +353,6 @@ section.footer div.copyright {
 
   section.title div.title-div div.title-container ul {
     justify-content: left;
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
 
   /*about*/
@@ -372,6 +374,10 @@ section.footer div.copyright {
 
   #skills.section-title {
     margin: 4%;
+  }
+
+  section.skills div.skills-line {
+    width: 85vw;
   }
 
   section.skills div.skills-line div.skills-box {
@@ -412,14 +418,14 @@ section.footer div.copyright {
   }
 
   section.academic .section-title{
-    margin: 4%;
+    margin: 6%;
   }
 
   section.academic div.courses {
     align-items: start;
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 15px 0 15px;
   }
@@ -428,7 +434,7 @@ section.footer div.copyright {
     align-items: center;
     flex-direction: row;
     justify-content:space-between;
-    width: 18rem;
+    width: 60vw;
   }
 
   section.academic div.courses ul li.course-img {
@@ -438,16 +444,72 @@ section.footer div.copyright {
   }
 
   /*profissional*/
+  #xp.section-title {
+    margin-top: 4%;
+  }
 
   section.experience div.experiencia-box {
     display: flex;
     flex-direction: column;
   }
 
+  section.experience div.experiencia-box h3 {
+    letter-spacing: 0.5px;
+  }
+
+  section.experience div.experiencia-box div.experience-description {
+    margin-bottom: 3%;
+    width: 65%;
+  }
+
+  section.experience div.experiencia-box span.experience-presentation button {
+    min-width: 170%;
+  }
+  
+  section.experience div.experiencia-box span.experience-demo button {
+    min-width: 340%;
+  }
+
   section.experience div.experiencia-box img {
+    margin-top: 4%;
     width: 100%;
   }
 }
+
+/*footeer*/
+
+section.footer div.contact {
+  padding-top: 15px;
+}
+
+section.footer div.copyright {
+  margin-top: 5px;
+  margin-bottom: -13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1000px) {
   /*main*/
@@ -620,6 +682,33 @@ section.footer div.copyright {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1440px) {
   .tudo {
     margin: 32px 152px;
@@ -652,281 +741,5 @@ section.footer div.copyright {
 
   section.formcontato {
     padding: 64px 172px;
-  }
-}
-
-@media (min-width: 700px) {
-  .tudo {
-    margin: 32px 32px;
-  }
-
-  /*title*/
-  section.title {
-    margin-bottom: 32px;
-  }
-
-  div.title-div {
-    justify-content: space-around;
-    align-content: flex-start;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  div.title-container {
-    width: 524px;
-  }
-
-  section.menu nav ul.menu-list {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    width: 600px;
-  }
-
-  section.title img.profile {
-    width: 157px;
-    margin-left: 32px;
-  }
-
-  /*experiências acadêmicas*/
-
-  section.academic div.courses {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  section.academic div.courses-box {
-    width: 18rem;
-  }
-
-  section.academic div.courses ul li.course-img img {
-    width: 50%;
-  }
-
-  /*expeirência profissional*/
-
-  section.experience div.experiencia-box {
-    display: flex;
-    flex-direction: column;
-  }
-
-  section.experience div.experiencia-box img {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1000px) {
-  /*main*/
-
-  .tudo {
-    margin: 30px 80px;
-  }
-
-  .section-title {
-    font-size: 32px;
-  }
-
-  /*Menu*/
-
-  section.menu nav ul.menu-list {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    width: 600px;
-  }
-
-  section.title div.title-div div.title-container h2 {
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 55px;
-  }
-
-  section.menu nav li.menu-list-item-c {
-    display: none;
-  }
-
-  div.title-container {
-    width: 80%;
-  }
-
-  section.title img.profile {
-    margin-top: -170px;
-    width: 28%;
-  }
-
-  section.title div.title-div div.title-container ul {
-    display: flex;
-    margin-left: -40px;
-    align-items: center;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  section.title div.title-div div.title-container h3 {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  /*Sessão sobre*/
-
-  section.about {
-    padding: 20px 60px 20px 60px;
-  }
-
-  div.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /*Skills*/
-
-  section.skills div.skills-line {
-    justify-content: center;
-  }
-
-  section.skills div.skills-line div.skills-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 10%;
-  }
-
-  /*Hobbies*/
-
-  section.hobbies div.hobbies-line {
-    width: 100%;
-  }
-
-  section.hobbies div.hobbies-line div.hobbies-box {
-    margin: 22px 15px 22px 0px;
-    width: 108px;
-    height: 108px;
-  }
-
-  /*Formação Acadêmica*/
-
-  section.academic div.courses-box {
-    width: 380px;
-  }
-
-  section.academic div.courses ul li.course-img img {
-    width: 70%;
-  }
-
-  section.academic div.courses ul li.course-img {
-    padding: 30px 30px;
-  }
-
-  section.academic {
-    margin-top: 82px;
-  }
-
-  /*Experiência Profissional*/
-
-  section.experience div.experiencia-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  section.experience div.experiencia-box:nth-child(2) {
-    margin-top: 50px;
-  }
-
-  section.experience div.experiencia-box:nth-child(3) {
-    flex-direction: row-reverse;
-  }
-
-  section.experience div.experiencia-box:nth-child(5) {
-    flex-direction: row-reverse;
-  }
-
-  section.experience div.info-container {
-    margin: 0 5%;
-  }
-
-  section.experience div.experiencia-box img {
-    width: 50%;
-  }
-
-  /*Contato*/
-
-  section.formcontato div.contact {
-    display: flex;
-    justify-content: space;
-  }
-
-  section.formcontato div.contact-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-    margin-top: -2%;
-  }
-
-  section.formcontato div.esquerda img.contact-img {
-    display: block;
-    width: 464px;
-    height: 570px;
-  }
-
-  section.formcontato form input {
-    width: 100%;
-  }
-
-  section.formcontato form textarea {
-    width: 100%;
-  }
-
-  /*Footer*/
-
-  section.footer div.rodape {
-    line-height: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    padding: 1%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .tudo {
-    margin: 20px 150px;
-  }
-
-  section.title img.profile {
-    margin-top: 10px;
-    width: 30%;
-  }
-
-  section.about {
-    padding: 20px 100px 20px 100px;
-  }
-
-  div.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  section.skills div.skills-line {
-    justify-content: center;
-  }
-
-  section.skills div.skills-line div.skills-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 12%;
-  }
-
-  section.hobbies div.hobbies-line {
-    justify-content: center;
-  }
-
-  section.hobbies div.hobbies-line div.hobbies-box {
-    width: 12%;
-  }
-
-  section.formcontato {
-    padding: 40px 160px;
   }
 }
