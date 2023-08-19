@@ -221,6 +221,10 @@ section.academic div.courses ul li {
 
 section.academic div.courses ul li.course-img {
   background-color: white;
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;
 }
 
 section.academic div.courses ul li.course-title h4 {
@@ -387,7 +391,7 @@ section.footer div.copyright {
     align-content: flex-start;
     flex-direction: row-reverse;
     margin-bottom: 20px;
-  }  
+  }
 
   section.title img.profile {
     width: 160px;
@@ -497,6 +501,7 @@ section.footer div.copyright {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    max-width:200px;
   }
 
 
@@ -572,46 +577,66 @@ section.footer div.copyright {
 
 
 @media (min-width: 1000px) {
+
+
   /*main*/
 
   .tudo {
-    margin: 32px 50px;
+    margin: 32px 50px 16px 50px;
   }
 
   .section-title {
     font-size: 32px;
   }
 
+
   /*Menu*/
 
-  section.menu nav ul.menu-list {
-    display: flex;
+  section.menu {
     justify-content: space-between;
-    font-size: 16px;
-    width: 600px;
   }
 
-  section.title div.title-div div.title-container h2 {
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 50px;
+  section.menu header {
+    display: flex;
+  }
+
+  section.menu nav ul.menu-list {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    padding: 0;
   }
 
   section.menu nav li.menu-list-item-c {
     display: none;
   }
 
+  section.menu nav li {
+    margin-right: 26px;
+  }
+
+  section.menu nav li:last-child {
+    margin-right: 0;
+  }
+
+  section.title div.title-div div.title-container h2 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
   div.title-container {
-    width: 751px;
+    width: 630px;
   }
 
   section.title img.profile {
-    width: 368px;
+    width: 270px;
   }
 
   section.title div.title-div div.title-container ul {
     display: flex;
-    margin-left: -65px;
+    margin-left: -94px;
     align-items: center;
     padding: 0px;
     font-size: 16px;
@@ -622,16 +647,22 @@ section.footer div.copyright {
     line-height: 23px;
   }
 
-  /*Sessão sobre*/
+
+  /*About*/
 
   section.about {
-    padding: 62px 164px;
+    padding: 30px 50px;
   }
 
-  div.about-container {
-    width: 751px;
-    height: 255px;
+  section.about h3 {
+    margin: 10px 0 25px 0;
+   }
+ 
+  section.about div.about-container {
+    width: 800px;
+    height: 200px;
   }
+
 
   /*Skills*/
 
@@ -640,10 +671,19 @@ section.footer div.copyright {
   }
 
   section.skills div.skills-line div.skills-box {
-    margin: 22px 15px 22px 0px;
-    width: 108px;
-    height: 118px;
+    margin: 0px 0px 22px 0px;
+    width: 360px;
   }
+
+  section.skills div.skills-line div.skills-box ul {
+    display: flex;
+    align-items: center;
+  }
+
+  section.skills div.skills-line div.skills-box img {
+    margin-right: 16px;
+  }
+
 
   /*Hobbies*/
 
@@ -652,41 +692,88 @@ section.footer div.copyright {
   }
 
   section.hobbies div.hobbies-line div.hobbies-box {
-    margin: 22px 15px 22px 0px;
-    width: 108px;
-    height: 108px;
+    margin: 0px 0px 22px 0px;
+    width: 360px;
   }
+
 
   /*Formação Acadêmica*/
 
+  section.academic {
+    margin-top: 4%;
+  }
+
+  section.academic div.courses-box:first-child {
+    margin-right: 0px;
+  }
+
+  section.academic div.courses {
+    justify-content: space-around;
+  }
+
   section.academic div.courses-box {
-    width: 380px;
+    width: 280px;
   }
 
   section.academic div.courses ul li.course-img img {
-    width: 70%;
+    max-width: 100%;
+    max-height: 100px;
+    width: auto;
+    height: auto;
   }
 
   section.academic div.courses ul li.course-img {
-    padding: 30px 30px;
+    padding: 10px 10px;
   }
 
-  section.academic {
-    margin-top: 82px;
-  }
 
   /*Experiência Profissional*/
 
+  #xp.section-title {
+    margin: 4%;
+  }
+  
   section.experience div.experiencia-box {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    padding: 0;
+    margin-top: 4%;
   }
 
-  section.experience div.experiencia-box:nth-child(2) {
-    margin-top: 50px;
+  section.experience div.experiencia-box:first-child {
+    margin-top: 0;
   }
 
+  section.experience div.experiencia-box img {
+    margin-top: 0;
+    width: 50%;
+  }
+
+  section.experience div.info-container {
+    margin: 0 0 0 4%;
+  }
+  
+  #saap {
+    margin: 0%;
+  }
+
+  section.experience div.experiencia-box h2 {
+    margin-top: 0;
+  }
+
+  section.experience div.experiencia-box div.experience-description {
+    margin-bottom: 0;
+    width: 70%;
+  }
+
+  section.experience div.experiencia-box span.experience-presentation button {
+    min-width: 110%;
+  }
+  
+  section.experience div.experiencia-box span.experience-demo button {
+    min-width: 110%;
+  }
+  
   section.experience div.experiencia-box:nth-child(3) {
     flex-direction: row-reverse;
   }
@@ -695,54 +782,17 @@ section.footer div.copyright {
     flex-direction: row-reverse;
   }
 
-  section.experience div.info-container {
-    margin: 0 5%;
-  }
-
-  section.experience div.experiencia-box img {
-    width: 50%;
-  }
-
-  /*Contato*/
-
-  section.formcontato div.contact {
-    display: flex;
-    justify-content: space;
-  }
-
-  section.formcontato div.contact-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-    margin-top: -2%;
-  }
-
-  section.formcontato div.esquerda img.contact-img {
-    display: block;
-    width: 464px;
-    height: 570px;
-  }
-
-  section.formcontato form input {
-    width: 100%;
-  }
-
-  section.formcontato form textarea {
-    width: 100%;
-  }
-
   /*Footer*/
 
-  section.footer div.rodape {
-    line-height: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    padding: 1%;
+  section.footer div.contact {
+    margin-right: 20px;
+    padding: 30px 0;
+    justify-content: start;
   }
-}
 
-
+  section.footer div.copyright {
+    padding: 0px;
+  }
 
 
 
