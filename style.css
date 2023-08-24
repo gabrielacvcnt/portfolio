@@ -3,7 +3,6 @@
 body {
   box-sizing: border-box;
   background-color: #f5f5f5;
-  cursor: pointer;
   font-family: "Raleway";
   color: #464646;
   margin: 0;
@@ -32,8 +31,14 @@ select:focus {
   outline: 0;
 }
 
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
-/*Mobile First*/
+
+/* MOBILE FIRST */
 
 .tudo {
   display: flex;
@@ -41,7 +46,7 @@ select:focus {
 }
 
 
-/*Sessão Menu*/
+/* MENU */
 
 section.menu {
   display: flex;
@@ -57,12 +62,17 @@ section header {
   justify-content: space-between;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 13px;
   color: #464646;
 }
 
+section.menu img {
+  width: auto;
+  height: auto;
+}
 
-/*Sessão Title*/
+
+/* TITLE */
 
 section header h3.menu-title {
   margin-left: 8px;
@@ -93,13 +103,18 @@ section.title div.title-div div.title-container ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px 0px 10px 0px;
+  padding: 12px 0px 10px 0px;
   font-size: 14px;
+}
+
+section.title div.title-div div.title-container img {
+  width: auto;
+  height: auto;
 }
 
 section.title img.profile {
   margin-left: 30%;
-  width: 40%;
+  width: 35%;
 }
 
 .section-title {
@@ -111,7 +126,7 @@ section.title img.profile {
 }
 
 
-/*Sessão About*/
+/* SOBRE */
 
 section.about {
   padding: 1rem 1rem 0.4rem 1rem;
@@ -134,7 +149,7 @@ section.about div.about-container img {
 }
 
 
-/*Sessão Skills*/
+/* SKILLS */
 
 section.skills div.skills-line {
   display: flex;
@@ -165,8 +180,14 @@ section.skills div.skills-line div.skills-box ul {
   padding: 0;
 }
 
+section.skills div.skills-line div.skills-box img {
+  width: auto;
+  height: auto;
+  margin-bottom: 5px;
+}
 
-/*Sessão Hobbies*/
+
+/* HOBBIES */
 
 section.hobbies div.hobbies-line {
   display: flex;
@@ -192,8 +213,14 @@ section.hobbies div.hobbies-line div.hobbies-box ul {
   padding: 0;
 }
 
+section.hobbies div.hobbies-line div.hobbies-box img{
+  width: auto;
+  height: auto;
+  margin-bottom: 5px;
+}
 
-/* Experiência Acadêmica*/
+
+/* ACADÊMICO */
 
 section.academic {
   margin-top: 4%;
@@ -221,8 +248,6 @@ section.academic div.courses ul li {
 
 section.academic div.courses ul li.course-img {
   background-color: white;
-  max-width:200px;
-  max-height:150px;
   width: auto;
   height: auto;
 }
@@ -242,7 +267,7 @@ section.academic div.courses ul li.course-subtitle {
 }
 
 
-/* Experiência Profissional*/
+/* PROFISSIONAL */
 
 #xp.section-title {
   margin: 6% 0 2% 0;
@@ -255,7 +280,7 @@ section.experience div.experiencia-box {
 section.experience div.experiencia-box h2 {
   font-weight: 700;
   font-size: 16px;
-  text-align: center;
+  text-align: start;
 }
 
 section.experience div.experiencia-box h3 {
@@ -296,19 +321,22 @@ section.experience img {
 }
 
 
-/*footeer*/
+/* RODAPÉ */
+
 
 section.footer div.contact {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 8px 20px 6px 20px;
+  padding: 20px 20px 10px 20px;
 }
 
 section.footer img {
   color: inherit;
   text-decoration: none;
   opacity: 0.7;
+  width: auto;
+  height: auto;
 }
 
 section.footer img:hover {
@@ -320,21 +348,7 @@ section.footer div.copyright {
   font-size: 12px;
   text-align: center;
   opacity: 0.6;
-  padding: 0 0 10px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -347,13 +361,14 @@ section.footer div.copyright {
   }
 
   .tudo {
-    margin: 32px 32px;
+    margin: 32px 32px 10px 32px;
   }
 
 
-  /*menu*/
+  /* MENU */
 
   section.menu {
+    align-items: baseline;
     justify-content: space-around;
     height: 8vh;
   }
@@ -367,10 +382,11 @@ section.footer div.copyright {
   }
 
   section.menu nav ul.menu-list {
+    align-items: center;
     display: flex;
-    height: 0;
-    padding: 0 0 30px 0;
     font-size: 13px;
+    height: 0;
+    padding: 0;
   }
 
   section.menu nav li {
@@ -383,28 +399,35 @@ section.footer div.copyright {
   }
 
 
-  /*title*/
+  /* TITLE */
 
   div.title-div {
+    align-items: center;
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
     flex-direction: row-reverse;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   section.title img.profile {
-    width: 160px;
-    margin: 0px 0px 0px 20px;
+    align-items: center;
+    width: 140px;
+    margin-left: 50px;
   }
 
   div.title-container {
-    width: 524px;
+    width: 450px;
   }
     
   section.title div.title-div div.title-container h2 {
     font-size: 26px;
     letter-spacing: 2px;
+    margin-top: 0;
+  }
+    
+  section.title div.title-div div.title-container h3 {
+    margin-bottom: 0;
   }
 
   section.title div.title-div div.title-container ul {
@@ -412,7 +435,7 @@ section.footer div.copyright {
   }
 
 
-  /*about*/
+  /* ABOUT */
   
   section.about h3 {
    margin-top: 10px;
@@ -428,7 +451,7 @@ section.footer div.copyright {
   }
 
 
-  /*skills*/
+  /* SKILLS */
 
   #skills.section-title {
     margin: 4%;
@@ -439,7 +462,7 @@ section.footer div.copyright {
   }
 
 
-  /*hobbies*/
+  /* HOBBIES */
 
   section.hobbies .section-title {
     margin: 4%;
@@ -465,7 +488,7 @@ section.footer div.copyright {
   }
 
   
-  /*acadêmico*/
+  /* ACADÊMICO */
 
   section.academic .section-title{
     margin-bottom: 4%;
@@ -501,11 +524,10 @@ section.footer div.copyright {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    max-width:200px;
   }
 
 
-  /*profissional*/
+  /* PROFISSIONAL */
 
   #xp.section-title {
     margin: 4% 0 0 0;
@@ -540,37 +562,18 @@ section.footer div.copyright {
     margin-top: 4%;
     width: 100%;
   }
+
+
+/* FOOTER */
+
+  section.footer div.contact {
+    padding: 20px 80px 10px 80px;
+  }
+
+  section.footer div.copyright {
+    padding: 0;
+  }
 }
-
-/*footeer*/
-
-section.footer div.contact {
-  padding: 10px 80px 15px 80px;
-}
-
-section.footer div.copyright {
-  padding: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -578,22 +581,16 @@ section.footer div.copyright {
 
 @media (min-width: 1000px) {
 
-
-  /*main*/
-
   .tudo {
-    margin: 32px 50px 16px 50px;
+    margin: 25px 50px 16px 50px;
   }
 
-  .section-title {
-    font-size: 32px;
-  }
-
-
-  /*Menu*/
+  /* MENU */
 
   section.menu {
+    align-items: center;
     justify-content: space-between;
+    padding-bottom: 30px;
   }
 
   section.menu header {
@@ -608,10 +605,6 @@ section.footer div.copyright {
     padding: 0;
   }
 
-  section.menu nav li.menu-list-item-c {
-    display: none;
-  }
-
   section.menu nav li {
     margin-right: 26px;
   }
@@ -620,10 +613,22 @@ section.footer div.copyright {
     margin-right: 0;
   }
 
+
+  /* TITLE */
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  div.title-div {
+    align-items: flex-start;
+  }
+
   section.title div.title-div div.title-container h2 {
-    font-size: 46px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 50px;
+    margin-bottom: 25px;
   }
 
   div.title-container {
@@ -631,27 +636,27 @@ section.footer div.copyright {
   }
 
   section.title img.profile {
-    width: 270px;
+    width: 28%;
   }
 
   section.title div.title-div div.title-container ul {
     display: flex;
-    margin-left: -94px;
+    margin: 25px 0 0 -90px;
     align-items: center;
     padding: 0px;
     font-size: 16px;
   }
 
   section.title div.title-div div.title-container h3 {
-    font-size: 17px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
 
   /*About*/
 
   section.about {
-    padding: 30px 50px;
+    padding: 20px 40px;
   }
 
   section.about h3 {
@@ -661,6 +666,11 @@ section.footer div.copyright {
   section.about div.about-container {
     width: 800px;
     height: 200px;
+  }
+
+  section.about div.about-container img {
+    object-fit: scale-down;
+    margin-top: -40px;
   }
 
 
@@ -785,15 +795,13 @@ section.footer div.copyright {
   /*Footer*/
 
   section.footer div.contact {
-    margin-right: 20px;
-    padding: 30px 0;
-    justify-content: start;
+    padding: 40px 100px 15px 100px;
   }
 
   section.footer div.copyright {
-    padding: 0px;
+    padding: 0 0 0 0;
   }
-
+}
 
 
 
