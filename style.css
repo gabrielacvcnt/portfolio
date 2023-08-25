@@ -1,3 +1,4 @@
+
 /*CSS Reset / Normalize*/
 
 body {
@@ -37,14 +38,12 @@ img {
   height: 100%;
 }
 
-
 /* MOBILE FIRST */
 
 .tudo {
   display: flex;
   flex-direction: column;
 }
-
 
 /* MENU */
 
@@ -70,7 +69,6 @@ section.menu img {
   width: auto;
   height: auto;
 }
-
 
 /* TITLE */
 
@@ -125,7 +123,6 @@ section.title img.profile {
   margin: 6%;
 }
 
-
 /* ABOUT */
 
 section.about {
@@ -145,7 +142,6 @@ section.about div.about-container {
   justify-content: center;
 }
 
-
 section.about div.about-container p {
   font-weight: 400;
   font-size: 14px;
@@ -155,7 +151,6 @@ section.about div.about-container p {
 section.about div.about-container img {
   width: 6%;
 }
-
 
 /* SKILLS */
 
@@ -179,7 +174,7 @@ section.skills div.skills-line div.skills-box {
   margin: 0 0 10px 0;
 }
 
-section.skills div.skills-line div.skills-box:nth-child(n+13) {
+section.skills div.skills-line div.skills-box:nth-child(n + 13) {
   margin: 0;
 }
 
@@ -193,7 +188,6 @@ section.skills div.skills-line div.skills-box img {
   height: auto;
   margin-bottom: 5px;
 }
-
 
 /* HOBBIES */
 
@@ -226,7 +220,6 @@ section.hobbies div.hobbies-line div.hobbies-box img {
   height: auto;
   margin-bottom: 5px;
 }
-
 
 /* ACADEMIC */
 
@@ -273,7 +266,6 @@ section.academic div.courses ul li.course-subtitle {
   margin-top: -14px;
   text-align: start;
 }
-
 
 /* PROFESSIONAL */
 
@@ -328,9 +320,7 @@ section.experience img {
   width: 100%;
 }
 
-
 /* FOOTER */
-
 
 section.footer div.contact {
   align-items: center;
@@ -358,12 +348,7 @@ section.footer div.copyright {
   opacity: 0.6;
 }
 
-
-
-
-
 @media (min-width: 700px) {
-
   body {
     padding: 0;
   }
@@ -371,7 +356,6 @@ section.footer div.copyright {
   .tudo {
     margin: 32px 32px 10px 32px;
   }
-
 
   /* MENU */
 
@@ -405,7 +389,6 @@ section.footer div.copyright {
   section.menu nav li:last-child {
     margin-right: 0;
   }
-
 
   /* TITLE */
 
@@ -442,7 +425,6 @@ section.footer div.copyright {
     display: none;
   }
 
-
   /* ABOUT */
 
   section.about h3 {
@@ -457,7 +439,6 @@ section.footer div.copyright {
     width: 6%;
   }
 
-
   /* SKILLS */
 
   #skills.section-title {
@@ -467,7 +448,6 @@ section.footer div.copyright {
   section.skills div.skills-line {
     width: 91vw;
   }
-
 
   /* HOBBIES */
 
@@ -493,7 +473,6 @@ section.footer div.copyright {
   section.hobbies li {
     margin-right: 20px;
   }
-
 
   /* ACADEMIC */
 
@@ -533,7 +512,6 @@ section.footer div.copyright {
     margin: 0;
   }
 
-
   /* PROFESSIONAL */
 
   #xp.section-title {
@@ -570,7 +548,6 @@ section.footer div.copyright {
     width: 100%;
   }
 
-
   /* FOOTER */
 
   section.footer div.contact {
@@ -582,12 +559,7 @@ section.footer div.copyright {
   }
 }
 
-
-
-
-
 @media (min-width: 1000px) {
-
   .tudo {
     margin: 25px 50px 16px 50px;
   }
@@ -619,7 +591,6 @@ section.footer div.copyright {
   section.menu nav li:last-child {
     margin-right: 0;
   }
-
 
   /* TITLE */
 
@@ -659,7 +630,6 @@ section.footer div.copyright {
     line-height: 24px;
   }
 
-
   /* ABOUT */
 
   section.about {
@@ -677,7 +647,6 @@ section.footer div.copyright {
   section.about div.about-container img {
     object-fit: scale-down;
   }
-
 
   /* SKILLS */
 
@@ -699,7 +668,6 @@ section.footer div.copyright {
     margin-right: 16px;
   }
 
-
   /* HOBBIES */
 
   section.hobbies div.hobbies-line {
@@ -710,7 +678,6 @@ section.footer div.copyright {
     margin: 0px 0px 22px 0px;
     width: 360px;
   }
-
 
   /* ACADEMIC */
 
@@ -740,7 +707,6 @@ section.footer div.copyright {
   section.academic div.courses ul li.course-img {
     padding: 10px 10px;
   }
-
 
   /* PROFESSIONAL */
 
@@ -808,43 +774,16 @@ section.footer div.copyright {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1440px) {
-
   .tudo {
-    margin: 30px 140px;
+    margin: 30px 140px 15px 140px;
   }
-
 
   /* MENU */
   section.menu header,
   nav ul.menu-list {
     font-size: 16px;
   }
-
 
   /* TITLE */
 
@@ -868,55 +807,23 @@ section.footer div.copyright {
     width: 26%;
   }
 
-
   /* ABOUT */
-
-  div.about-container {
-    width: 751px;
-    height: 255px;
-  }
-
-  section.about div.about-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 
   section.about div.about-container p {
     font-size: 16px;
   }
 
-  section.about div.about-container img {
-    margin: -38px 0 0 47%;
-    width: 6%;
-  }
-
-
   /* SKILLS */
 
-  section.skills div.skills-line {
-    justify-content: center;
-  }
-
   section.skills div.skills-line div.skills-box {
-    margin: 22px 15px 22px 0px;
-    width: 186px;
-    height: 118px;
+    margin: 0 0 20px 0;
+    width: 40%;
   }
 
-  section.hobbies div.hobbies-line {
-    justify-content: center;
-  }
+  /* HOBBIES */
 
   section.hobbies div.hobbies-line div.hobbies-box {
-    margin: 22px 15px 22px 0px;
-    width: 186px;
-    height: 118px;
-  }
-
-  section.formcontato {
-    padding: 64px 172px;
+    margin: 0 0 20px 0;
+    width: 40%;
   }
 }
