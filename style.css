@@ -126,7 +126,7 @@ section.title img.profile {
 }
 
 
-/* SOBRE */
+/* ABOUT */
 
 section.about {
   padding: 1rem 1rem 0.4rem 1rem;
@@ -228,7 +228,7 @@ section.hobbies div.hobbies-line div.hobbies-box img {
 }
 
 
-/* ACADÊMICO */
+/* ACADEMIC */
 
 section.academic {
   margin-top: 4%;
@@ -275,7 +275,7 @@ section.academic div.courses ul li.course-subtitle {
 }
 
 
-/* PROFISSIONAL */
+/* PROFESSIONAL */
 
 #xp.section-title {
   margin: 6% 0 2% 0;
@@ -329,7 +329,7 @@ section.experience img {
 }
 
 
-/* RODAPÉ */
+/* FOOTER */
 
 
 section.footer div.contact {
@@ -495,7 +495,7 @@ section.footer div.copyright {
   }
 
 
-  /* ACADÊMICO */
+  /* ACADEMIC */
 
   section.academic .section-title {
     margin-bottom: 4%;
@@ -534,7 +534,7 @@ section.footer div.copyright {
   }
 
 
-  /* PROFISSIONAL */
+  /* PROFESSIONAL */
 
   #xp.section-title {
     margin: 4% 0 0 0;
@@ -660,7 +660,7 @@ section.footer div.copyright {
   }
 
 
-  /*About*/
+  /* ABOUT */
 
   section.about {
     padding: 20px 40px;
@@ -679,7 +679,7 @@ section.footer div.copyright {
   }
 
 
-  /*Skills*/
+  /* SKILLS */
 
   section.skills div.skills-line {
     width: 100%;
@@ -700,7 +700,7 @@ section.footer div.copyright {
   }
 
 
-  /*Hobbies*/
+  /* HOBBIES */
 
   section.hobbies div.hobbies-line {
     width: 100%;
@@ -712,7 +712,7 @@ section.footer div.copyright {
   }
 
 
-  /*Formação Acadêmica*/
+  /* ACADEMIC */
 
   section.academic {
     margin-top: 2%;
@@ -742,7 +742,7 @@ section.footer div.copyright {
   }
 
 
-  /*Experiência Profissional*/
+  /* PROFESSIONAL */
 
   #xp.section-title {
     margin: 6%;
@@ -797,7 +797,7 @@ section.footer div.copyright {
     flex-direction: row-reverse;
   }
 
-  /*Footer*/
+  /* FOOTER */
 
   section.footer div.contact {
     padding: 40px 100px 15px 100px;
