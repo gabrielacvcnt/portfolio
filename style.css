@@ -1,4 +1,3 @@
-
 /*CSS Reset / Normalize*/
 
 body {
@@ -98,11 +97,12 @@ section.title div.title-div div.title-container h3 {
 }
 
 section.title div.title-div div.title-container ul {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  padding: 12px 0px 10px 0px;
+  display: flex;
   font-size: 14px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1% 15% 5% 15%;
 }
 
 section.title div.title-div div.title-container img {
@@ -149,7 +149,7 @@ section.about div.about-container p {
 }
 
 section.about div.about-container img {
-  width: 6%;
+  width: 14%;
 }
 
 /* SKILLS */
@@ -326,7 +326,7 @@ section.footer div.contact {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 10px 20px;
+  padding: 3% 0 1.5% 0;
 }
 
 section.footer img {
@@ -402,9 +402,8 @@ section.footer div.copyright {
   }
 
   section.title img.profile {
-    align-items: center;
+    margin: -8% 0 0 8%;
     width: 140px;
-    margin-left: 50px;
   }
 
   div.title-container {
@@ -422,7 +421,13 @@ section.footer div.copyright {
   }
 
   section.title div.title-div div.title-container ul {
-    display: none;
+    display: flex;
+    justify-content: start;
+    padding: 6% 0 0 0;
+  }
+
+  section.title div.title-div div.title-container li {
+    padding-right: 10%;
   }
 
   /* ABOUT */
@@ -431,12 +436,8 @@ section.footer div.copyright {
     margin-top: 10px;
   }
 
-  section.title div.title-div div.title-container li {
-    padding-right: 25px;
-  }
-
   section.about div.about-container img {
-    width: 6%;
+    width: 9%;
   }
 
   /* SKILLS */
@@ -551,7 +552,7 @@ section.footer div.copyright {
   /* FOOTER */
 
   section.footer div.contact {
-    padding: 20px 80px 10px 80px;
+    padding: 3% 20% 1.5% 20%;
   }
 
   section.footer div.copyright {
@@ -564,7 +565,7 @@ section.footer div.copyright {
     margin: 25px 50px 16px 50px;
   }
 
-  /* MENU */
+  /* MENU @media 1000px*/
 
   section.menu {
     align-items: center;
@@ -592,10 +593,14 @@ section.footer div.copyright {
     margin-right: 0;
   }
 
-  /* TITLE */
+  /* TITLE @media 1000px*/
 
   .section-title {
     font-size: 32px;
+  }
+
+  div.title-container {
+    width: 630px;
   }
 
   div.title-div {
@@ -608,29 +613,23 @@ section.footer div.copyright {
     line-height: 50px;
     margin-bottom: 25px;
   }
-
-  div.title-container {
-    width: 630px;
-  }
-
-  section.title img.profile {
-    width: 28%;
-  }
-
-  section.title div.title-div div.title-container ul {
-    display: flex;
-    margin: 25px 0 0 -90px;
-    align-items: center;
-    padding: 0px;
-    font-size: 16px;
-  }
-
+  
   section.title div.title-div div.title-container h3 {
     font-size: 16px;
     line-height: 24px;
   }
 
-  /* ABOUT */
+  section.title img.profile {
+    margin: 1% 0 0 0;
+    width: 27%;
+  }
+
+  section.title div.title-div div.title-container ul {
+    font-size: 16px;
+    padding: 4.5% 0 0 0;
+  }
+
+  /* ABOUT @media 1000px */
 
   section.about {
     padding: 20px 40px;
@@ -645,10 +644,10 @@ section.footer div.copyright {
   }
 
   section.about div.about-container img {
-    object-fit: scale-down;
+    width: 8%;
   }
 
-  /* SKILLS */
+  /* SKILLS @media 1000px */
 
   section.skills div.skills-line {
     width: 100%;
@@ -668,7 +667,7 @@ section.footer div.copyright {
     margin-right: 16px;
   }
 
-  /* HOBBIES */
+  /* HOBBIES @media 1000px */
 
   section.hobbies div.hobbies-line {
     width: 100%;
@@ -679,7 +678,7 @@ section.footer div.copyright {
     width: 360px;
   }
 
-  /* ACADEMIC */
+  /* ACADEMIC @media 1000px */
 
   section.academic {
     margin-top: 2%;
@@ -708,7 +707,7 @@ section.footer div.copyright {
     padding: 10px 10px;
   }
 
-  /* PROFESSIONAL */
+  /* PROFESSIONAL @media 1000px */
 
   #xp.section-title {
     margin: 6%;
@@ -762,16 +761,6 @@ section.footer div.copyright {
   section.experience div.experiencia-box:nth-child(5) {
     flex-direction: row-reverse;
   }
-
-  /* FOOTER */
-
-  section.footer div.contact {
-    padding: 40px 100px 15px 100px;
-  }
-
-  section.footer div.copyright {
-    padding: 0 0 0 0;
-  }
 }
 
 @media (min-width: 1440px) {
@@ -799,11 +788,8 @@ section.footer div.copyright {
     letter-spacing: 2px;
   }
 
-  section.title div.title-div div.title-container ul {
-    margin: 30px 0 0 -126px;
-  }
-
   section.title img.profile {
+    margin: 0;
     width: 26%;
   }
 
@@ -811,6 +797,10 @@ section.footer div.copyright {
 
   section.about div.about-container p {
     font-size: 16px;
+  }
+
+  section.about div.about-container img {
+    width: 6%;
   }
 
   /* SKILLS */
