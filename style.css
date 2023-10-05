@@ -817,6 +817,25 @@ section.footer div.copyright {
   }
 }
 
+@media (min-width: 1280px) {
+  .tudo {
+    margin: 28px 80px 16px 80px;
+  }
+
+  div.title-container {
+    width: 70%;
+  }
+
+  section.title img.profile {
+    margin: 0% 0 0 0;
+    width: 23%;
+  }
+}
+
+  section.about div.about-container {
+    height: 200px;
+  }
+
 @media (min-width: 1440px) {
   .tudo {
     margin: 30px 80px 15px 80px;
